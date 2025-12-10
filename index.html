@@ -11,3 +11,204 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/...">
 
 </head>
+<body> 
+
+<section> 
+     <button id="navToggle" style="background:yellow;">☰ Menu</button>
+
+
+ <nav id="navMenu" style="display:none; background:#eee; padding:10px;">
+        <a href="#home">Home</a><br>
+        <a href="#services">Services</a><br>
+        <a href="#about">About</a><br>
+        <a href="#contact">Contact</a><br>
+    </nav>
+
+<nav> <!-- nav -->
+
+    <div class="logo"> <!-- logo-->
+        <img src="image/logo.png">
+    </div>
+
+    <ul> 
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Featured">Featured</a></li>
+        <li><a href="#Arrivals">Arrivals</a></li>
+        <li><a href="#Reviews">Reviews</a></li>
+        <li><a href="#Blog">Blog</a></li>
+    </ul>
+
+    <div class="social_icon"> 
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-heart"></i>
+    </div>
+
+</nav>
+<div class="main"> <!--  الصورة والنص  -->
+
+     <button id="darkModeBtn" style="background:yellow; margin-top:10px;">
+        🌙 Dark Mode
+    </button>
+
+    <div class="main_tag"> <!-- welcom-->
+        <h1>WELCOME TO<br><span>BOOK STORE</span></h1>
+
+        <p> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit...
+        </p>
+
+        <a href="#" class="main_btn">Learn More</a> 
+    </div>
+    <div class="main_img"> <!--  الطاولة -->
+        <img src="image/table.png">
+    </div>
+
+</div> 
+
+</section> 
+<div class="services"> 
+
+    <div class="services_box"> 
+        <div class="services_card"> <!-- كرت خدمة -->
+            <i class="fa-solid fa-truck-fast"></i>
+            <h3>Fast Delivery</h3>
+            <p>Lorem ipsum dolor sit amet...</p>
+        </div>
+
+        <div class="services_card">
+            <i class="fa-solid fa-headset"></i>
+            <h3>24 x 7 Services</h3>
+            <p>Lorem ipsum dolor sit amet...</p>
+        </div>
+        <div class="services_card">
+            <i class="fa-solid fa-tag"></i>
+            <h3>Best Deal</h3>
+            <p>Lorem ipsum dolor sit amet...</p>
+        </div>
+
+        <div class="services_card">
+            <i class="fa-solid fa-lock"></i>
+            <h3>Secure Payment</h3>
+            <p>Lorem ipsum dolor sit amet...</p>
+        </div>
+
+    </div> <!-- end services_box -->
+
+</div> <!-- end services -->
+<div class="about"> 
+
+    <div class="about_image"> 
+        <img src="image/about.png">
+    </div>
+
+    <div class="about_tag"> 
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit amet...</p>
+        <a href="#" class="about_btn">Learn More</a>
+    </div>
+
+</div>
+<div class="featured_boks"> <!-- featured_boks -->
+
+    <h1>Featured Books</h1>
+
+    <div class="featured_book_box"> 
+        <div class="featured_book_card"> 
+
+            <div class="featurde_book_img"> 
+                <img src="image/book_1.jpg">
+            </div>
+
+            <div class="featurde_book_tag"> 
+                <h2>Featured Books</h2>
+                <p class="writer">John Deo</p>
+                <div class="categories">Thriller, Horror, Romance</div>
+                <p class="book_price">$25.50<sub><del>$28.60</del></sub></p>
+                <a href="#" class="f_btn">Learn More</a>
+            </div>
+
+        </div>
+<div class="featured_book_card">...</div>
+<div class="featured_book_card">...</div>
+<div class="featured_book_card">...</div>
+<div class="featured_book_card">...</div>
+<div class="featured_book_card">...</div>
+<div class="featured_book_card">...</div>
+<div class="featured_book_card">...</div>
+<div class="featured_book_card">...</div>
+<div class="featured_book_card">...</div>
+<div class="featured_book_card">...</div>
+<div class="featured_book_card">...</div>
+<div class="featured_book_card">...</div>
+<div class="featured_book_card">...</div>
+<div class="featured_book_card">...</div>
+<div class="featured_book_card">...</div>
+
+</div> <!-- end featured_book_box -->
+
+</div> <!-- end featured_boks -->
+<div class="arrivals"> 
+
+    <h1>New Arrivals</h1>
+
+    <div class="arrivals_box"> 
+        <div class="arrivals_card">
+    <div class="arrivals_image"><img src="image/arrival_1.jpg"></div>
+    <div class="arrivals_tag">
+        <p>New Arrivals</p>
+        <div class="arrivals_icon"> <!-- تقييم  --></div>
+        <a href="#" class="arrivals_btn">Learn More</a>
+    </div>
+</div>
+
+<div class="arrivals_card">...</div>
+<div class="arrivals_card">...</div>
+<div class="arrivals_card">...</div>
+<div class="arrivals_card">...</div>
+<div class="arrivals_card">...</div>
+
+</div> 
+
+</div> 
+<div class="reviews"> 
+
+    <h1>Reviews</h1>
+
+    <div class="review_box"> 
+
+<div class="review_card"> <!-- كرت تقييم -->
+    <i class="fa-solid fa-quote-right"></i>
+    <div class="card_top"><img src="image/review_1.png"></div>
+    <div class="card">
+        <h2>John Deo</h2>
+        <p>Lorem ipsum dolor sit amet...</p>
+        <div class="review_icon"> <!-- نجوم --> </div>
+    </div>
+</div>
+
+
+</div> 
+
+</div> 
+<script>
+        // NAV BUTTON
+        const navBtn = document.getElementById("navToggle");
+        const menu = document.getElementById("navMenu");
+
+        navBtn.onclick = () => {
+            menu.style.display = (menu.style.display === "none") ? "block" : "none";
+        };
+
+        // DARK MODE BUTTON
+        const darkBtn = document.getElementById("darkModeBtn");
+
+        darkBtn.onclick = () => {
+            document.body.classList.toggle("dark-mode");
+        };
+    </script>
+</body> 
+</html> 
+
+
+
