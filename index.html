@@ -14,6 +14,16 @@
 <body> 
 
 <section> 
+     <button id="navToggle" style="background:yellow;">☰ Menu</button>
+
+
+ <nav id="navMenu" style="display:none; background:#eee; padding:10px;">
+        <a href="#home">Home</a><br>
+        <a href="#services">Services</a><br>
+        <a href="#about">About</a><br>
+        <a href="#contact">Contact</a><br>
+    </nav>
+
 <nav> <!-- nav -->
 
     <div class="logo"> <!-- logo-->
@@ -36,6 +46,10 @@
 
 </nav>
 <div class="main"> <!--  الصورة والنص  -->
+
+     <button id="darkModeBtn" style="background:yellow; margin-top:10px;">
+        🌙 Dark Mode
+    </button>
 
     <div class="main_tag"> <!-- welcom-->
         <h1>WELCOME TO<br><span>BOOK STORE</span></h1>
@@ -177,7 +191,22 @@
 </div> 
 
 </div> 
+<script>
+        // NAV BUTTON
+        const navBtn = document.getElementById("navToggle");
+        const menu = document.getElementById("navMenu");
 
+        navBtn.onclick = () => {
+            menu.style.display = (menu.style.display === "none") ? "block" : "none";
+        };
+
+        // DARK MODE BUTTON
+        const darkBtn = document.getElementById("darkModeBtn");
+
+        darkBtn.onclick = () => {
+            document.body.classList.toggle("dark-mode");
+        };
+    </script>
 </body> 
 </html> 
 
